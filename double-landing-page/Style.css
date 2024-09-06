@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    background-color: white;
+    color:black;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    overflow: hidden;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: beige;
+    background-image: url("https://iplanet.one/cdn/shop/files/iPhone_15_Blue_PDP_Image_Position-1__en-IN_550x.jpg?v=1695427876");
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: antiquewhite;
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/in/sm-f741blbains/gallery/in-galaxy-zflip6-f741-513517-sm-f741blbains-thumb-542848009?$GNB_CARD_FULL_M_PNG_PNG$");
+    background-size: cover;
+}
+
+.active-left .left{
+    width: 75%;
+    transition: 1s width;
+}
+
+.active-left .right{
+    width: 25%;
+    transition: 1.5s width;
+}
+
+.active-right .left{
+    width: 25%;
+    transition: 1.5s width;
+}
+.active-right .right{
+    width: 75%;
+    transition: 1s width;
+}
